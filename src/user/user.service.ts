@@ -13,7 +13,6 @@ export class UserService {
 
   async findOne(username: string): Promise<User | undefined> {
     const user = await this.userModel.findOne({ username });
-    console.log(user);
     return user;
   }
 }
