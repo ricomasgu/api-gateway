@@ -3,7 +3,6 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 import { CoordinatesController } from './coordinates.controller';
 import { CoordinatesSchema } from './coordinates.model';
-import { CoordinatesService } from './coordinates.service';
 
 @Module({
   imports: [
@@ -12,6 +11,6 @@ import { CoordinatesService } from './coordinates.service';
     ]),
   ],
   controllers: [CoordinatesController],
-  providers: [CoordinatesService],
+  providers: [],
 })
 export class CoordinatesModule {}
