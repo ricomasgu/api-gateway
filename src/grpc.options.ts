@@ -6,5 +6,6 @@ export const microservicesOptions: ClientOptions = {
   options: {
     package: 'app',
     protoPath: join(__dirname, '../src/app.proto'),
+    url: 'grpc-microservice:5000',
   },
 };
